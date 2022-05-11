@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: var(--bdr);
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Lora", serif; */
+  --bdr: 1px solid lightblue;
+}
