@@ -10,17 +10,19 @@ body {
 }
 
 #root {
-  /* font-family: "Lora", serif; */
   --bdr: 1px solid lightblue;
-  --fnt-sz: 16px;
-  --gap: 18px;
+  --radius: 8px;
+  --fnt-sz: 15px;
+  --fnt-lora: "Lora", serif;
+  --gap: 8px;
   --mrg-norm: calc(var(--fnt-sz) / 2);
+  --color-dark: #555;
+  --color-light: snow;
 
   /* mimic the adyen.com color palette */
   --color-fst: #088f3e;
   --color-sec: #e3f7ea;
   --color-trd: #00122c;
-  --color-gray: #555;
 
   min-height: 100%;
   width: 100%;

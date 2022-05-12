@@ -1,0 +1,11 @@
+.main-wrapper {
+  margin-top: calc(var(--fnt-sz) * 2.5);
+  display: flex;
+}
+
+main {
+  flex: 9;
+}
+aside {
+  flex: 3;
+}
