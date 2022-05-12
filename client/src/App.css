@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: var(--bdr);
+  /* border: var(--bdr); */
 }
 
 body {
@@ -10,7 +10,19 @@ body {
 }
 
 #root {
-  /* font-family: "Roboto", sans-serif; */
   /* font-family: "Lora", serif; */
   --bdr: 1px solid lightblue;
+  --fnt-sz: 16px;
+  --gap: 18px;
+  --mrg-norm: calc(var(--fnt-sz) / 2);
+
+  /* mimic the adyen.com color palette */
+  --color-fst: #088f3e;
+  --color-sec: #e3f7ea;
+  --color-trd: #00122c;
+
+  min-height: 100%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fnt-sz);
 }

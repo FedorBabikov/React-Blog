@@ -1,6 +1,7 @@
 import React from "react";
+import Header from "./components/header/Header.js";
 import "./App.css";
 
 export default function App() {
-  return <div>'Hello from the client side !'</div>;
+  return <Header />;
 }
