@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: var(--bdr); */
+  border: var(--bdr);
 }
 
 body {
@@ -20,8 +20,11 @@ body {
   --color-fst: #088f3e;
   --color-sec: #e3f7ea;
   --color-trd: #00122c;
+  --color-gray: #555;
 
   min-height: 100%;
+  width: 100%;
+  border: none;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-size: var(--fnt-sz);
