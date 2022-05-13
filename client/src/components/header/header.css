@@ -3,10 +3,6 @@ header * {
   border: none;
 }
 
-header {
-  margin-top: calc(var(--fnt-sz) * 2.5);
-}
-
 .hdr-title {
   position: absolute;
   left: 50%;
@@ -26,13 +22,13 @@ header {
 }
 
 .hdr-title span:first-child {
-  font-size: calc(var(--fnt-sz) * 2);
+  font-size: calc(var(--fnt-sz-norm) * 2);
 }
 
 .hdr-title span:nth-child(2) {
   position: absolute;
-  top: calc(var(--fnt-sz) * 2.7);
-  font-size: calc(var(--fnt-sz) * 4);
+  top: calc(var(--fnt-sz-norm) * 2.7);
+  font-size: calc(var(--fnt-sz-norm) * 4);
 }
 
 .hdr-image {

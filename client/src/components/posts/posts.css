@@ -1,0 +1,10 @@
+main {
+  border: none;
+}
+
+main {
+  padding: var(--gap);
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

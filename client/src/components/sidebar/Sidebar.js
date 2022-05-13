@@ -15,7 +15,10 @@ export default function Sidebar() {
         </p>
       </section>
       <section>
-        <span>CATEGORIES</span>
+        <span>
+          <i class="fa-solid fa-layer-group"></i>
+          CATEGORIES
+        </span>
         <ul>
           <li>Express</li>
           <li>Axios</li>

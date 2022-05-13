@@ -11,7 +11,7 @@ import {
 export default function Nav() {
   return (
     <nav>
-      <div className="hdr-item-fst">
+      <div className="nav-item-fst">
         <a href={TWITTER_URL} rel="noreferrer" target={"_blank"}>
           <i className="fa-brands fa-twitter"></i>
         </a>
@@ -22,14 +22,14 @@ export default function Nav() {
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
       </div>
-      <div className="hdr-item-sec">
+      <div className="nav-item-sec">
         <ul>
           <li>Login</li>
           <li>Home</li>
           <li>Logout</li>
         </ul>
       </div>
-      <div className="hdr-item-thd">
+      <div className="nav-item-thd">
         <i className="fa-brands fa-searchengin"></i>
         <img src={`${AVATAR_URL}`} alt={DEFAULT_ALT} />
       </div>

@@ -4,7 +4,7 @@ aside * {
 }
 
 aside,
-section {
+aside section {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -12,42 +12,46 @@ section {
 
 aside {
   gap: calc(var(--gap) * 2.5);
+  padding: var(--gap);
 }
 
-section {
-  padding: var(--gap);
+aside section {
   background-color: var(--color-light);
   border-radius: var(--radius);
   align-items: center;
 }
 
-section > * {
+aside section > * {
   width: 90%;
 }
 
-section span {
+aside section span {
   font-family: var(--fnt-lora);
-  font-size: calc(var(--fnt-sz) * 0.9);
+  font-size: var(--fnt-sz-small);
   text-align: center;
   color: var(--color-fst);
   border-bottom: 1px solid var(--color-trd);
   border-top: 1px solid var(--color-trd);
   padding: calc(var(--gap) / 2);
-  margin-bottom: calc(var(--gap) * 0.5);
 }
 
-section img {
+aside section span i {
+  margin-right: var(--gap);
+  font-size: 85%;
+}
+
+aside section img {
   max-height: 80%;
   border-radius: var(--radius);
 }
 
-section p {
+aside section p {
   text-align: justify;
-  /* padding-left: var(--gap); */
-  /* padding-right: var(--gap); */
+  padding-left: var(--gap);
+  padding-right: var(--gap);
 }
 
-section ul {
+aside section ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -55,21 +59,22 @@ section ul {
   gap: 0;
 }
 
-section ul li {
+aside section ul li {
+  color: var(--color-dark);
   padding: var(--gap);
   width: 50%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-section ul li:nth-child(odd) {
+aside section ul li:nth-child(odd) {
   text-align: left;
 }
-section ul li:nth-child(even) {
+aside section ul li:nth-child(even) {
   text-align: right;
 }
 
-section ul li:last-child {
+aside section ul li:last-child {
   width: auto;
   text-align: center;
 }
