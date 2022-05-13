@@ -4,11 +4,10 @@
 }
 
 .postcard {
-  align-self: start;
   background-color: var(--color-light);
   border-radius: var(--radius);
   overflow: hidden;
-  margin-bottom: var(--gap);
+  margin-bottom: calc(var(--gap) * 2.2);
 }
 
 .postcard img {
@@ -29,7 +28,7 @@
 }
 
 .postcard-title {
-  text-align: center;
+  text-align: left;
 }
 
 .postcard-cats,
