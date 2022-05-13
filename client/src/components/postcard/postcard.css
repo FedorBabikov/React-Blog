@@ -1,0 +1,49 @@
+.postcard,
+.postcard * {
+  border: none;
+}
+
+.postcard {
+  align-self: start;
+  background-color: var(--color-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: var(--gap);
+}
+
+.postcard img {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.postcard section {
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+
+.postcard section p {
+  border-bottom: 1px solid var(--color-dark);
+  padding-bottom: var(--gap);
+  margin-bottom: calc(var(--gap) * 0.5);
+}
+
+.postcard-title {
+  text-align: center;
+}
+
+.postcard-cats,
+.postcard-date {
+  font-size: var(--fnt-sz-small);
+  color: var(--color-dark);
+}
+
+.postcard-cats > *,
+.postcard-date i {
+  margin-right: var(--gap);
+}
+
+.postcard i {
+  color: var(--color-fst);
+  font-size: 75%;
+}

@@ -1,16 +1,16 @@
 import React from "react";
 import "./posts.css";
-import Post from "../post/Post";
+import Postcard from "../postcard/Postcard";
 
 export default function Posts() {
   return (
     <main>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Postcard />
+      <Postcard />
+      <Postcard />
+      <Postcard />
+      <Postcard />
+      <Postcard />
     </main>
   );
 }
