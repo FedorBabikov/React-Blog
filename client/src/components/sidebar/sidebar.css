@@ -31,7 +31,6 @@
 
 .sidebar section span i {
   margin-right: var(--gap);
-  font-size: 80%;
 }
 
 .sidebar section img {
@@ -64,6 +63,7 @@
 .sidebar section ul li:nth-child(odd) {
   text-align: left;
 }
+
 .sidebar section ul li:nth-child(even) {
   text-align: right;
 }

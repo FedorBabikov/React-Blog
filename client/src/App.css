@@ -5,29 +5,34 @@
 }
 
 #root {
-  --bdr: 1px solid lightblue;
-  --radius: 8px;
-  --fnt-sz-norm: 16px;
-  --fnt-sz-small: 13px;
-  --fnt-lora: "Lora", serif;
-  --gap: 9px;
-  --color-dark: #777;
-  --color-light: snow;
-
   /* mimic the adyen.com color palette */
   --color-fst: #088f3e;
   --color-sec: #e3f7ea;
   --color-trd: #00122c;
 
-  min-height: 100vh;
-  width: 100%;
+  --bdr: 1px solid lightblue;
+  --radius: 8px;
+  --fnt-sz-norm: 16px;
+  --fnt-sz-small: 12px;
+  --fnt-lora: "Lora", serif;
+  --gap: 9px;
+  --color-dark: #777;
+  --color-light: snow;
+
   display: flex;
   flex-direction: column;
   gap: calc(var(--fnt-sz-norm) * 2);
 
   position: relative;
+  background-color: #fff;
+  min-height: 100vh;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: var(--fnt-sz-norm);
+}
+
+.wrapper {
+  display: flex;
 }
 
 main,

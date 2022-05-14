@@ -1,5 +1,5 @@
 .postcard {
-  background-color: var(--color-light);
+  background-color: var(--color-sec);
   border-radius: var(--radius);
   overflow: hidden;
   margin-bottom: calc(var(--gap) * 2.2);
@@ -34,8 +34,4 @@
 .postcard-cats > *,
 .postcard-date i {
   margin-right: var(--gap);
-}
-
-.postcard i {
-  font-size: 75%;
 }

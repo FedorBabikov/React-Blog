@@ -1,6 +1,6 @@
 import React from "react";
 import "./posts.css";
-import Postcard from "../postcard/Postcard";
+import Postcard from "../postCard/PostCard.js";
 
 export default function Posts() {
   return (

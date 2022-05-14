@@ -20,6 +20,7 @@
 }
 
 .create form {
+  max-width: 70vw;
   flex-direction: column;
   gap: calc(var(--gap) * 2);
 }
@@ -39,6 +40,6 @@
 }
 
 .create textarea {
-  max-width: 85vw;
+  max-width: 85%;
   margin-left: calc(var(--fnt-sz-norm) * 1.8 + var(--gap));
 }

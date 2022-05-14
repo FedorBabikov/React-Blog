@@ -18,6 +18,7 @@
 .post-content h1 {
   font-family: var(--fnt-lora);
 }
+
 .post-icons {
   position: relative;
   min-width: calc(var(--fnt-sz-norm) * 3.5);
@@ -31,6 +32,10 @@
 
   display: flex;
   gap: var(--gap);
+}
+
+.post-icons i {
+  font-size: var(--fnt-sz-norm);
 }
 
 .post-icons i:last-child {

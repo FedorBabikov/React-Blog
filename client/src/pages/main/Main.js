@@ -8,10 +8,8 @@ export default function Main() {
   return (
     <>
       <Header />
-      <div className="main-wrapper">
-        <Posts />
-        <Sidebar />
-      </div>
+      <Posts />
+      <Sidebar />
     </>
   );
 }
