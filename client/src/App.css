@@ -30,18 +30,18 @@
   font-size: var(--fnt-sz-norm);
 }
 
+main,
+aside {
+  padding: var(--gap);
+  border-radius: var(--radius);
+}
+
 main {
   flex: 9;
 }
 
 aside {
   flex: 3;
-}
-
-main,
-aside {
-  padding: var(--gap);
-  border-radius: var(--radius);
 }
 
 img {
@@ -51,4 +51,33 @@ img {
 i {
   font-size: var(--fnt-sz-small);
   color: var(--color-fst);
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  box-shadow: none;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--color-fst);
+  color: var(--color-trd);
+}
+
+form {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-dark);
+  border-radius: var(--radius);
+  padding: calc(var(--gap) * 2.5);
+  min-width: 40vw;
+  min-height: 25vh;
+  max-width: 90vw;
+}
+
+form input,
+form textarea {
+  padding: 5px;
+}
+
+form ::placeholder {
+  font-size: calc(var(--fnt-sz-small) * 0.85);
 }

@@ -10,10 +10,15 @@ export default function Create() {
             <i className="fa-solid fa-file-circle-plus"></i>
           </label>
           <input type="file" id="file" />
-          <input type="text" id="title" placeholder="title" autoFocus={true} />
+          <input
+            type="text"
+            id="title"
+            placeholder="post title"
+            autoFocus={true}
+          />
         </section>
         <section>
-          <textarea placeholder="contents: drag me to desired size"></textarea>
+          <textarea placeholder="contents: drag me by corner"></textarea>
         </section>
         <section>
           <button>ADD POST</button>
