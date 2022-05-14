@@ -1,8 +1,8 @@
 import React from "react";
-import "./postfull.css";
+import "./postFull.css";
 import { POST_IMG_URL, DEFAULT_ALT } from "../../constants.js";
 
-export default function Postactual() {
+export default function PostFull() {
   return (
     <main className="post-content">
       <img src={POST_IMG_URL} alt={DEFAULT_ALT} />

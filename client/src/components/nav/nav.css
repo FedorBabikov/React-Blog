@@ -7,14 +7,11 @@
 
 [class*="nav-item"] {
   justify-content: center;
-}
-
-.nav,
-[class*="nav-item"] {
   align-items: center;
 }
 
 .nav {
+  align-items: center;
   height: 50px;
   background-color: var(--color-light);
   position: sticky;

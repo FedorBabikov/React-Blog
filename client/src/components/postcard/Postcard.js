@@ -1,8 +1,8 @@
 import React from "react";
-import "./postcard.css";
+import "./postCard.css";
 import { POST_IMG_URL, DEFAULT_ALT } from "../../constants.js";
 
-export default function Post() {
+export default function PostCard() {
   return (
     <article className="postcard">
       <img src={POST_IMG_URL} alt={DEFAULT_ALT} />
