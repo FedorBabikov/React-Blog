@@ -1,8 +1,3 @@
-.postcard,
-.postcard * {
-  border: none;
-}
-
 .postcard {
   background-color: var(--color-light);
   border-radius: var(--radius);
@@ -13,7 +8,6 @@
 .postcard img {
   width: 100%;
   border-radius: var(--radius);
-  object-fit: cover;
 }
 
 .postcard section {

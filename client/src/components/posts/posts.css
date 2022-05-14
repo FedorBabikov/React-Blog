@@ -1,9 +1,4 @@
 main {
-  border: none;
-}
-
-main {
-  padding: var(--gap);
   display: grid;
   gap: calc(var(--gap) * 2);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -1,31 +1,25 @@
-aside,
-aside * {
-  border: none;
-}
-
-aside,
-aside section {
+.sidebar,
+.sidebar section {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
 }
 
-aside {
+.sidebar {
   gap: calc(var(--gap) * 2.5);
-  padding: var(--gap);
 }
 
-aside section {
+.sidebar section {
   background-color: var(--color-light);
   border-radius: var(--radius);
   align-items: center;
 }
 
-aside section > * {
+.sidebar section > * {
   width: 90%;
 }
 
-aside section span {
+.sidebar section span {
   font-family: var(--fnt-lora);
   font-size: var(--fnt-sz-small);
   text-align: center;
@@ -35,23 +29,23 @@ aside section span {
   padding: calc(var(--gap) / 2);
 }
 
-aside section span i {
+.sidebar section span i {
   margin-right: var(--gap);
   font-size: 80%;
 }
 
-aside section img {
+.sidebar section img {
   max-height: 80%;
   border-radius: var(--radius);
 }
 
-aside section p {
+.sidebar section p {
   text-align: justify;
   padding-left: var(--gap);
   padding-right: var(--gap);
 }
 
-aside section ul {
+.sidebar section ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -59,7 +53,7 @@ aside section ul {
   gap: 0;
 }
 
-aside section ul li {
+.sidebar section ul li {
   color: var(--color-dark);
   padding: var(--gap);
   width: 50%;
@@ -67,14 +61,14 @@ aside section ul li {
   text-overflow: ellipsis;
 }
 
-aside section ul li:nth-child(odd) {
+.sidebar section ul li:nth-child(odd) {
   text-align: left;
 }
-aside section ul li:nth-child(even) {
+.sidebar section ul li:nth-child(even) {
   text-align: right;
 }
 
-aside section ul li:last-child {
+.sidebar section ul li:last-child {
   width: auto;
   text-align: center;
 }

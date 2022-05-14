@@ -10,7 +10,7 @@ import {
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav-item-fst">
         <a href={TWITTER_URL} rel="noreferrer" target={"_blank"}>
           <i className="fa-brands fa-twitter"></i>

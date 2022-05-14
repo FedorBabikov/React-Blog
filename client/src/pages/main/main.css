@@ -2,11 +2,3 @@
   border: none;
   display: flex;
 }
-
-main {
-  flex: 9;
-}
-
-aside {
-  flex: 3;
-}

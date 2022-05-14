@@ -4,7 +4,7 @@ import { AVATAR_URL, DEFAULT_ALT } from "../../constants";
 
 export default function Sidebar() {
   return (
-    <aside>
+    <aside className="sidebar">
       <section>
         <span>ABOUT ME</span>
         <img src={AVATAR_URL} alt={DEFAULT_ALT} />
