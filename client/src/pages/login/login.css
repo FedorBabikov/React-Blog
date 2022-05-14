@@ -1,0 +1,20 @@
+.login {
+  background-color: var(--color-sec);
+}
+
+.login h2 {
+  font-family: var(--fnt-lora);
+  margin-bottom: var(--gap);
+  text-align: center;
+}
+
+.login form {
+  max-width: 50vw;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--gap) * 2);
+}

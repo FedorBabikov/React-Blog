@@ -4,6 +4,7 @@ import "./create.css";
 export default function Create() {
   return (
     <main className="create">
+      <h2>Create new post</h2>
       <form>
         <section>
           <label htmlFor="file">

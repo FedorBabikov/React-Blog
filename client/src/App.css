@@ -35,18 +35,18 @@
   display: flex;
 }
 
-main,
-aside {
-  padding: var(--gap);
-  border-radius: var(--radius);
-}
-
 main {
   flex: 9;
 }
 
 aside {
   flex: 3;
+}
+
+main,
+aside {
+  padding: var(--gap);
+  border-radius: var(--radius);
 }
 
 img {
@@ -58,7 +58,18 @@ i {
   color: var(--color-fst);
 }
 
-button {
+form {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-dark);
+  border-radius: var(--radius);
+  padding: calc(var(--gap) * 2.5);
+  min-width: 40vw;
+  min-height: 25vh;
+  max-width: 90vw;
+}
+
+form button {
+  vertical-align: middle;
   cursor: pointer;
   padding: 8px 16px;
   box-shadow: none;
@@ -68,14 +79,8 @@ button {
   color: var(--color-trd);
 }
 
-form {
-  background-color: var(--color-light);
-  border: 2px solid var(--color-dark);
-  border-radius: var(--radius);
-  padding: calc(var(--gap) * 2.5);
-  min-width: 40vw;
-  min-height: 25vh;
-  max-width: 90vw;
+form label {
+  font-size: var(--fnt-sz-small);
 }
 
 form input,

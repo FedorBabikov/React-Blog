@@ -1,4 +1,3 @@
-.create,
 .create form,
 .create i {
   display: flex;
@@ -8,6 +7,12 @@
 
 .create {
   background-color: var(--color-sec);
+}
+
+.create h2 {
+  font-family: var(--fnt-lora);
+  margin-bottom: var(--gap);
+  text-align: center;
 }
 
 .create #file {
@@ -40,6 +45,5 @@
 }
 
 .create textarea {
-  max-width: 85%;
   margin-left: calc(var(--fnt-sz-norm) * 1.8 + var(--gap));
 }
