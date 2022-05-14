@@ -10,7 +10,7 @@
   --fnt-sz-norm: 16px;
   --fnt-sz-small: 13px;
   --fnt-lora: "Lora", serif;
-  --gap: 8px;
+  --gap: 9px;
   --color-dark: #777;
   --color-light: snow;
 
@@ -32,15 +32,23 @@
 
 main {
   flex: 9;
-  padding: var(--gap);
 }
 
 aside {
-  padding: var(--gap);
-
   flex: 3;
+}
+
+main,
+aside {
+  padding: var(--gap);
+  border-radius: var(--radius);
 }
 
 img {
   object-fit: cover;
+}
+
+i {
+  font-size: var(--fnt-sz-small);
+  color: var(--color-fst);
 }

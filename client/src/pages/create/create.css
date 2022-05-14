@@ -1,0 +1,73 @@
+.create,
+.create form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-sec);
+}
+
+.create #file {
+  display: none;
+}
+
+.create #title,
+.create textarea {
+  flex-grow: 1;
+}
+
+.create form {
+  background-color: var(--color-light);
+  border-radius: var(--radius);
+  padding: calc(var(--gap) * 2);
+  border: 2px solid var(--color-dark);
+  min-width: 40vw;
+  min-height: 25vh;
+  max-width: 90vw;
+
+  flex-direction: column;
+  gap: calc(var(--gap) * 2);
+}
+
+.create form section {
+  width: 100%;
+  display: flex;
+  gap: var(--gap);
+}
+
+.create i {
+  width: calc(var(--fnt-sz-norm) * 1.8);
+  height: calc(var(--fnt-sz-norm) * 1.8);
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create input,
+.create textarea {
+  padding: 5px;
+}
+
+.create textarea {
+  max-width: 85vw;
+  margin-left: calc(var(--fnt-sz-norm) * 1.8 + var(--gap));
+}
+
+.create button {
+  cursor: pointer;
+  padding: 7px 16px;
+  box-shadow: none;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--color-fst);
+  color: var(--color-trd);
+}
+
+.create input::placeholder,
+.create textarea::placeholder {
+  font-size: var(--fnt-sz-small);
+}

@@ -26,7 +26,7 @@ export default function Nav() {
         <ul>
           <li>Login</li>
           <li>Home</li>
-          <li>Logout</li>
+          <li>Create</li>
         </ul>
       </div>
       <div className="nav-item-thd">

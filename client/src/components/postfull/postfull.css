@@ -33,14 +33,6 @@
   gap: var(--gap);
 }
 
-.post-icons i {
-  font-size: var(--fnt-sz-norm);
-}
-
-.post-icons i:first-child {
-  color: var(--color-fst);
-}
-
 .post-icons i:last-child {
   color: var(--color-dark);
 }
