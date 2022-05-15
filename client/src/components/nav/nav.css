@@ -35,6 +35,7 @@
 
 .nav-item-sec ul {
   list-style: none;
+  gap: calc(var(--gap) * 2);
 }
 
 .nav-item-sec ul li {

@@ -6,10 +6,10 @@
 }
 
 .create {
-  background-color: var(--color-sec);
+  margin: auto;
 }
 
-.create h2 {
+.create h3 {
   font-family: var(--fnt-lora);
   margin-bottom: var(--gap);
   text-align: center;
@@ -46,4 +46,8 @@
 
 .create textarea {
   margin-left: calc(var(--fnt-sz-norm) * 1.8 + var(--gap));
+}
+
+.create button {
+  margin: auto;
 }

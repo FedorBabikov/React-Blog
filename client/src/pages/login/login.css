@@ -1,8 +1,8 @@
 .login {
-  background-color: var(--color-sec);
+  margin: auto;
 }
 
-.login h2 {
+.login h3 {
   font-family: var(--fnt-lora);
   margin-bottom: var(--gap);
   text-align: center;
@@ -17,4 +17,8 @@
   justify-content: center;
   align-items: center;
   gap: calc(var(--gap) * 2);
+}
+
+.login form input {
+  width: 70%;
 }

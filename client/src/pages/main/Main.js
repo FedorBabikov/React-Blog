@@ -6,7 +6,6 @@ import Posts from "../../components/posts/Posts.js";
 export default function Main() {
   return (
     <>
-      <Header />
       <Posts />
     </>
   );

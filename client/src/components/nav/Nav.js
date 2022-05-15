@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./nav.css";
 import {
   AVATAR_URL,
@@ -9,6 +11,8 @@ import {
 } from "../../constants.js";
 
 export default function Nav() {
+  const isLogged = true;
+
   return (
     <nav className="nav">
       <div className="nav-item-fst">
@@ -24,14 +28,28 @@ export default function Nav() {
       </div>
       <div className="nav-item-sec">
         <ul>
-          <li>Login</li>
-          <li>Home</li>
-          <li>Create</li>
+          <li>
+            {!isLogged ? (
+              <Link className="link" to="/login">
+                Login
+              </Link>
+            ) : null}
+          </li>
+          <li>
+            <Link className="link" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/create">
+              New post
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="nav-item-thd">
         <i className="fa-brands fa-searchengin"></i>
-        <img src={`${AVATAR_URL}`} alt={DEFAULT_ALT} />
+        {isLogged ? <img src={`${AVATAR_URL}`} alt={DEFAULT_ALT} /> : null}
       </div>
     </nav>
   );

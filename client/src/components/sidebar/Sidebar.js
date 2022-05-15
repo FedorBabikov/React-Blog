@@ -16,7 +16,7 @@ export default function Sidebar() {
       </section>
       <section>
         <span>
-          <i class="fa-solid fa-layer-group"></i>
+          <i className="fa-solid fa-layer-group"></i>
           CATEGORIES
         </span>
         <ul>

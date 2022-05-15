@@ -21,7 +21,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: calc(var(--fnt-sz-norm) * 2);
+  gap: calc(var(--fnt-sz-norm) * 1.8);
 
   position: relative;
   background-color: #fff;
@@ -41,12 +41,17 @@ main {
 
 aside {
   flex: 3;
+  border-radius: var(--radius);
 }
 
 main,
 aside {
   padding: var(--gap);
-  border-radius: var(--radius);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 img {

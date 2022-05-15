@@ -3,8 +3,8 @@ import "./create.css";
 
 export default function Create() {
   return (
-    <main className="create">
-      <h2>Create new post</h2>
+    <div className="create">
+      <h3>Create new post</h3>
       <form>
         <section>
           <label htmlFor="file">
@@ -25,6 +25,6 @@ export default function Create() {
           <button>ADD POST</button>
         </section>
       </form>
-    </main>
+    </div>
   );
 }
