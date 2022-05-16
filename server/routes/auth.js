@@ -9,7 +9,7 @@ router.post("/", (req, res) => {
   });
 
   !foundUser
-    ? res.status(400).json({ msg: "Wrong name and/or password" })
+    ? res.status(401).json({ msg: "Wrong name and/or password" })
     : res.status(200).json({
         msg: `Welcome, ${foundUser.name}! You have successfully logged in`,
       });
