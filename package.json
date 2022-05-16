@@ -2,16 +2,22 @@
   "name": "react-blog",
   "version": "1.0.0",
   "description": "Simple blog app built using React, Express, Axios, external API calls and client-side routing",
-  "main": "index.js",
+  "main": "./server/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon"
   },
   "keywords": [],
   "author": "Fedor Babikov",
   "license": "ISC",
   "dependencies": {
+    "casual": "^1.6.2",
     "cors": "^2.8.5",
-    "express": "^4.18.1"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
