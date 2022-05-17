@@ -17,6 +17,24 @@ const data = {
       created: casual.date("YYYY-MM-DD"),
     })),
   ],
+  categories: ["Express", "Axios", "React", "CSS", "Javascript"],
 };
+
+// take random number of random unique categories from `data.categories` and put that array into each post
+for (const post of data.posts) {
+  let i = 0;
+  let categories = [];
+  const numCategories = Math.floor(Math.random() * data.categories.length);
+
+  do {
+    categories.push(
+      data.categories[Math.floor(Math.random() * data.categories.length)]
+    );
+
+    i++;
+  } while (i <= numCategories);
+
+  post.categories = [...new Set(categories)];
+}
 
 export default data;

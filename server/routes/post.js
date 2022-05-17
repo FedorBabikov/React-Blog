@@ -6,7 +6,7 @@ import { v4 as uuid } from "uuid";
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.status(200).json(data.posts);
+  res.status(200).json({ posts: data.posts, categories: data.categories });
 });
 
 router.get("/:id", (req, res) => {

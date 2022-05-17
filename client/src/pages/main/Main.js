@@ -9,7 +9,7 @@ export default function Main() {
 
   useEffect(() => {
     (async () => {
-      const res = await axios({
+      const { data } = await axios({
         url: "http://localhost:5000/posts",
         method: "GET",
         headers: {
@@ -17,7 +17,7 @@ export default function Main() {
         },
       });
 
-      setPosts(res.data);
+      setPosts(data.posts);
     })();
   }, []);
 

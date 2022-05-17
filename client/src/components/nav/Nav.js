@@ -7,7 +7,7 @@ import {
   TWITTER_URL,
   FACEBOOK_URL,
   LINKEDIN_URL,
-  DEFAULT_ALT,
+  DEFAULT_IMG_ALT,
 } from "../../constants.js";
 
 export default function Nav() {
@@ -49,7 +49,7 @@ export default function Nav() {
       </div>
       <div className="nav-item-thd">
         <i className="fa-brands fa-searchengin"></i>
-        {isLogged ? <img src={`${AVATAR_URL}`} alt={DEFAULT_ALT} /> : null}
+        {isLogged ? <img src={`${AVATAR_URL}`} alt={DEFAULT_IMG_ALT} /> : null}
       </div>
     </nav>
   );

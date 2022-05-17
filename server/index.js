@@ -15,6 +15,7 @@ app.use("/login", authRoute);
 app.use("/posts", postRoute);
 
 app.listen(PORT, () => {
-  console.log(`Express server is running on local port ${PORT}...`);
-  console.log("\nUse any of these users to log in: ", data.users);
+  console.log(`\nExpress server is running on local port ${PORT}...`);
+  console.log("\nUse any of these user accounts to log in: ");
+  console.table(data.users);
 });

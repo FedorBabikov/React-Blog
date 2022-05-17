@@ -30,6 +30,9 @@
 
 .postcard-cats,
 .postcard-date {
+  padding-top: calc(var(--gap) * 0.2);
+  padding-bottom: calc(var(--gap) * 0.2);
+
   font-size: calc(var(--fnt-sz-small) * 0.8);
   color: var(--color-dark);
 }
