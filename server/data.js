@@ -14,6 +14,7 @@ const data = {
       image: process.env.POST_IMG_URL,
       title: casual.title,
       contents: casual.sentences(+process.env.NUM_POST_SENT),
+      created: casual.date("YYYY-MM-DD"),
     })),
   ],
 };

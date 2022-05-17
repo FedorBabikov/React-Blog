@@ -2,19 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./postCard.css";
-import { POST_IMG_URL, DEFAULT_ALT } from "../../constants.js";
+import { DEFAULT_ALT } from "../../constants.js";
 
-export default function PostCard() {
+export default function PostCard({ post }) {
   return (
     <article className="postcard">
-      <Link to="/post/1" className="link">
-        <img src={POST_IMG_URL} alt={DEFAULT_ALT} />
+      <Link to={`/post/${post.id}`} className="link">
+        <img src={post.image} alt={DEFAULT_ALT} />
       </Link>
       <section>
-        <Link to="/post/1" className="link">
-          <p className="postcard-title">
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-          </p>
+        <Link to={`/post/${post.id}`} className="link">
+          <p className="postcard-title">{post.title}</p>
         </Link>
         <div className="postcard-cats">
           <i className="fa-solid fa-layer-group"></i>
@@ -22,7 +20,8 @@ export default function PostCard() {
           <span>Axios</span>
         </div>
         <div className="postcard-date">
-          <i className="fa-solid fa-clock-rotate-left"></i>2 days ago
+          <i className="fa-solid fa-clock-rotate-left"></i>
+          {post.created}
         </div>
       </section>
     </article>

@@ -1,4 +1,7 @@
 .postcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--color-sec);
   border-radius: var(--radius);
   overflow: hidden;
@@ -27,7 +30,7 @@
 
 .postcard-cats,
 .postcard-date {
-  font-size: var(--fnt-sz-small);
+  font-size: calc(var(--fnt-sz-small) * 0.8);
   color: var(--color-dark);
 }
 

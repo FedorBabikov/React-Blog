@@ -1,6 +1,7 @@
 import express from "express";
-import { v4 as uuid } from "uuid";
 import data from "../data.js";
+import casual from "casual";
+import { v4 as uuid } from "uuid";
 
 const router = express.Router();
 
@@ -27,18 +28,19 @@ router.post("/", (req, res) => {
     )
   ) {
     res.status(400).json({
-      msg: "New post must include Title and Contents fields both of which should be strings",
+      msg: "New post must include both Title and Contents fields both of which should be strings",
     });
   } else {
-    const currentId = uuid();
+    const newPostId = uuid();
 
     data.posts.push({
-      id: currentId,
+      id: newPostId,
       image: process.env.POST_IMG_URL,
+      created: new Date().toISOString().slice(0, 10),
       ...req.body,
     });
 
-    res.status(201).json({ msg: `Post with id '${currentId}' has been added` });
+    res.status(201).json({ msg: `Post with id '${newPostId}' has been added` });
   }
 });
 
@@ -51,9 +53,7 @@ router.put("/:id", (req, res) => {
       msg: "Post update must include either Title or Contents field or both, and they should be strings",
     });
   } else {
-    const postToUpdate = data.posts.find((post) => {
-      return post.id === req.params.id;
-    });
+    const postToUpdate = data.posts.find((post) => post.id === req.params.id);
 
     if (req.body.title) {
       postToUpdate.title = req.body.title;
@@ -64,24 +64,22 @@ router.put("/:id", (req, res) => {
     }
 
     res
-      .status(200)
+      .status(201)
       .json({ msg: `Post with id '${req.params.id}' has been updated` });
   }
 });
 
 router.delete("/:id", (req, res) => {
-  const foundPost = data.posts.find((post) => {
-    return post.id === req.params.id;
-  });
+  const postToDelete = data.posts.find((post) => post.id === req.params.id);
 
-  if (foundPost) {
-    data.posts = data.posts.filter((post) => post.id !== foundPost.id);
+  if (!postToDelete) {
+    res.status(404).json({ msg: `Post with id '${req.params.id}' not found` });
+  } else {
+    data.posts = data.posts.filter((post) => post.id !== postToDelete.id);
 
     res
-      .status(200)
+      .status(201)
       .json({ msg: `Post with id '${req.params.id}' has been deleted` });
-  } else {
-    res.status(404).json({ msg: `Post with id '${req.params.id}' not found` });
   }
 });
 

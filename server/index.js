@@ -3,7 +3,6 @@ import cors from "cors";
 import "dotenv/config.js";
 
 import data from "./data.js";
-
 import authRoute from "./routes/auth.js";
 import postRoute from "./routes/post.js";
 
