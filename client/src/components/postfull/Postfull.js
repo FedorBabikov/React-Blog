@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./postFull.css";
 import { DEFAULT_IMG_ALT } from "../../constants.js";
 

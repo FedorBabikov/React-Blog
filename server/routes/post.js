@@ -1,12 +1,20 @@
 import express from "express";
 import data from "../data.js";
-import casual from "casual";
 import { v4 as uuid } from "uuid";
 
 const router = express.Router();
 
 router.get("/", (req, res) => {
   res.status(200).json({ posts: data.posts, categories: data.categories });
+});
+
+router.get("/category/:cat", (req, res) => {
+  const categoryPosts = data.posts.filter((post) => {
+    const lcCategories = post.categories.map((cat) => cat.toLowerCase());
+    return lcCategories.includes(req.params.cat);
+  });
+
+  res.status(200).json({ posts: categoryPosts, categories: data.categories });
 });
 
 router.get("/:id", (req, res) => {

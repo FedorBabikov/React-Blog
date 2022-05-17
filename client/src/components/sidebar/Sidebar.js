@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import PostsContext from "../../PostsContext.js";
+
 import "./sidebar.css";
-import { AVATAR_URL, DEFAULT_IMG_ALT } from "../../constants";
+import { AVATAR_URL, DEFAULT_IMG_ALT } from "../../constants.js";
 
 export default function Sidebar() {
+  const { postsContext } = useContext(PostsContext);
+
   return (
     <aside className="sidebar">
       <section>
@@ -20,11 +25,16 @@ export default function Sidebar() {
           CATEGORIES
         </span>
         <ul>
-          <li>Express</li>
-          <li>Axios</li>
-          <li>React</li>
-          <li>CSS</li>
-          <li>Javascript</li>
+          {postsContext.categories &&
+            postsContext.categories.map((category, index) => (
+              <Link
+                to={`category/${category.toLowerCase()}`}
+                className="link"
+                key={index}
+              >
+                <li>{category}</li>
+              </Link>
+            ))}
         </ul>
       </section>
     </aside>

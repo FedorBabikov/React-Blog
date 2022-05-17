@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { PostsProvider } from "./PostsContext.js";
 
 import "./App.css";
 
@@ -15,18 +16,20 @@ export default function App() {
   const { pathname } = useLocation();
 
   return (
-    <>
+    <PostsProvider>
       <Nav />
       {pathname === "/" ? <Header /> : null}
       <div className="wrapper">
         <Routes>
           <Route exact path="/" element={<Main />} />
+          <Route path="/category/:cat" element={<Main />} />
           <Route path="/post/:id" element={<Post />} />
+          <Route path="/delete/:id" element={<Post />} />
           <Route path="/login" element={<Login />} />
           <Route path="/create" element={<Create />} />
         </Routes>
         {pathname !== "/login" && pathname !== "/create" ? <Sidebar /> : null}
       </div>
-    </>
+    </PostsProvider>
   );
 }

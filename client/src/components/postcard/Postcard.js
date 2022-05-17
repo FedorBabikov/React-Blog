@@ -16,8 +16,9 @@ export default function PostCard({ post }) {
         </Link>
         <div className="postcard-cats">
           <i className="fa-solid fa-layer-group"></i>
-          <span>React</span>
-          <span>Axios</span>
+          {post.categories.map((category, index) => (
+            <span key={index}>{category}</span>
+          ))}
         </div>
         <div className="postcard-date">
           <i className="fa-solid fa-clock-rotate-left"></i>

@@ -7,6 +7,7 @@ import PostFull from "../../components/postFull/PostFull.js";
 
 export default function Post() {
   const { pathname } = useLocation();
+
   const postId = pathname.split("/")[2];
 
   const [post, setPost] = useState([]);
@@ -23,7 +24,7 @@ export default function Post() {
 
       setPost(res.data);
     })();
-  }, [postId]);
+  }, [pathname]);
 
   return (
     <>
